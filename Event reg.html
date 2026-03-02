@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+<h2>Event Registration Form</h2>
+
+<form>
+    <label for="name">Name:</label><br>
+    <input 
+        type="text" 
+        id="name" 
+        name="name"
+        placeholder="Enter your name"
+        maxlength="25"
+        required>
+    <br><br>
+
+    <label for="email">Email:</label><br>
+    <input 
+        type="email" 
+        id="email" 
+        name="email"
+        value="test@example.com"
+        autofocus
+        required>
+    <br><br>
+
+    <label for="password">Password:</label><br>
+    <input 
+        type="password" 
+        id="password" 
+        name="password"
+        minlength="6"
+        required>
+    <br><br>
+
+    <label for="category">Category:</label><br>
+    <select id="category" name="category" required>
+        <option value="student">Student</option>
+        <option value="employee">Employee</option>
+        <option value="freelancer" selected>Freelancer</option>
+    </select>
+    <br><br>
+
+    <label for="eventDate">Event Date:</label><br>
+    <input 
+        type="date" 
+        id="eventDate" 
+        name="event_date"
+        required>
+    <br><br>
+
+    <label>Tickets:</label><br>
+    <input type="radio" id="t1" name="tickets" value="1" required>
+    <label for="t1">1 Ticket</label><br>
+
+    <input type="radio" id="t2" name="tickets" value="2" checked>
+    <label for="t2">2 Tickets</label><br>
+
+    <input type="radio" id="t3" name="tickets" value="3">
+    <label for="t3">3 Tickets</label>
+    <br><br>
+
+    <input 
+        type="checkbox" 
+        id="payment" 
+        name="payment"
+        required>
+    <label for="payment">Online Payment</label>
+    <br><br>
+
+    <label for="notes">Notes:</label><br>
+    <textarea 
+        id="notes" 
+        name="notes"
+        placeholder="Enter additional notes here..."></textarea>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
